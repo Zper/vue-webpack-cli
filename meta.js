@@ -32,10 +32,6 @@ module.exports = {
       "type": "confirm",
       "message": "Install vuex?"
     },
-    "babel-polyfill": {
-      "type": "confirm",
-      "message": "Install babel-polyfill?"
-    },
     "eruda": {
       "type": "confirm",
       "message": "Install eruda Console for Mobile Browsers?"
