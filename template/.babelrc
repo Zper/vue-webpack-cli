@@ -1,0 +1,16 @@
+{
+  "presets": [
+    ["env", {
+      "modules": false,
+      "useBuiltIns": true  //用到的polyfill才会转换，不会整个polyfill引进
+    }]
+  ],
+  "plugins": [
+    "transform-object-rest-spread", //es2017的...扩展运算符转换
+    // ["component", [{
+    //   "libraryName": "element-ui",
+    //   "styleLibraryName": "theme-chalk"
+    // }]]
+    // "transform-vue-jsx"
+  ]
+}
