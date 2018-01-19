@@ -43,8 +43,8 @@ module.exports = {
             "default": false
         }
     },
-    'filters': {
-        'template/server.js': 'ws',
+    "filters": {
+        ".server.js": "ws",
     },
     "completeMessage": "To get started:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm install\n  npm run dev\n\nDocumentation can be found at https://github.com/Zper/vue-webpack-cli"
 };
