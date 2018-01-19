@@ -1,46 +1,49 @@
 module.exports = {
-  "helpers": {
-    "if_or": function (v1, v2, options) {
-      if (v1 || v2) {
-        return options.fn(this);
-      }
+    "helpers": {
+        "if_or": function (v1, v2, options) {
+            if (v1 || v2) {
+                return options.fn(this);
+            }
 
-      return options.inverse(this);
-    }
-  },
-  "prompts": {
-    "name": {
-      "type": "string",
-      "required": true,
-      "message": "Project name"
+            return options.inverse(this);
+        }
     },
-    "description": {
-      "type": "string",
-      "required": false,
-      "message": "Project description",
-      "default": "A Vue.js project"
+    "prompts": {
+        "name": {
+            "type": "string",
+            "required": true,
+            "message": "Project name"
+        },
+        "description": {
+            "type": "string",
+            "required": false,
+            "message": "Project description",
+            "default": "A Vue.js project"
+        },
+        "author": {
+            "type": "string",
+            "message": "Author"
+        },
+        "router": {
+            "type": "confirm",
+            "message": "Install vue-router?"
+        },
+        "vuex": {
+            "type": "confirm",
+            "message": "Install vuex?"
+        },
+        "eruda": {
+            "type": "confirm",
+            "message": "Install eruda Console for Mobile Browsers?"
+        },
+        "ws": {
+            "type": "confirm",
+            "message": "Install ws?",
+            "default": false
+        }
     },
-    "author": {
-      "type": "string",
-      "message": "Author"
+    'filters': {
+        '.server.js': 'ws',
     },
-    "router": {
-      "type": "confirm",
-      "message": "Install vue-router?"
-    },
-    "vuex": {
-      "type": "confirm",
-      "message": "Install vuex?"
-    },
-    "eruda": {
-      "type": "confirm",
-      "message": "Install eruda Console for Mobile Browsers?"
-    },
-      "ws": {
-          "type": "confirm",
-          "message": "Install ws?",
-          "default": false
-      }
-  },
-  "completeMessage": "To get started:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm install\n  npm run dev\n\nDocumentation can be found at https://github.com/Zper/vue-webpack-cli"
+    "completeMessage": "To get started:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm install\n  npm run dev\n\nDocumentation can be found at https://github.com/Zper/vue-webpack-cli"
 };
