@@ -35,7 +35,12 @@ module.exports = {
     "eruda": {
       "type": "confirm",
       "message": "Install eruda Console for Mobile Browsers?"
-    }
+    },
+      "ws": {
+          "type": "confirm",
+          "message": "Install ws?",
+          "default": false
+      }
   },
   "completeMessage": "To get started:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm install\n  npm run dev\n\nDocumentation can be found at https://github.com/Zper/vue-webpack-cli"
 };

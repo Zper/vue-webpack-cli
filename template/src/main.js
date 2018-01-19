@@ -14,22 +14,7 @@ import Util from './libs/util';
 
 import App from './app.vue';
 
-//本地代理的思路（处理跨域问题？）
-        // Vue.prototype.$ws = new WebSocket('ws://localhost:8181');
-        // this.$ws.onopen = (e) => {
-        //     let data = {
-        //         method: 'get',
-        //         url: this.$http.defaults.baseURL + this.$store.state.api.menu,
-        //         data: {}
-        //     }
-        // }
-        // this.$ws.send(JSON.stringify(data));
-        // this.$ws.onmessage = (event) => {
-        //     console.log(event);
-        // }
-        // this.$ws.onclose = (event) => {
-        //     console.log('Client notified socket has closed', event);
-        // };
+{{#ws}}Vue.prototype.$ws = new WebSocket('ws://localhost:8181');{{/ws}}
 
 //自定义全局组件
 // import Toptitle from './components/toptitle.vue'
