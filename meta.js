@@ -34,7 +34,8 @@ module.exports = {
         },
         "eruda": {
             "type": "confirm",
-            "message": "Install eruda Console for Mobile Browsers?"
+            "message": "Install eruda Console for Mobile Browsers?",
+            "default": false,
         },
         "ws": {
             "type": "confirm",
@@ -43,7 +44,7 @@ module.exports = {
         }
     },
     'filters': {
-        '.server.js': 'ws',
+        'src/server.js': 'ws',
     },
     "completeMessage": "To get started:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm install\n  npm run dev\n\nDocumentation can be found at https://github.com/Zper/vue-webpack-cli"
 };
