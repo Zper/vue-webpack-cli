@@ -11,10 +11,13 @@ import Util from './libs/util';
 
 // // 字体图片icomoon
 // import './assets/icomoon/style.css';
+{{#lodash}}
+//引入lodash
+import Lodash from 'lodash';
+{{/lodash}}
+{{#ws}}Vue.prototype.$ws = new WebSocket('ws://localhost:8181');{{/ws}}
 
 import App from './app.vue';
-
-{{#ws}}Vue.prototype.$ws = new WebSocket('ws://localhost:8181');{{/ws}}
 
 //自定义全局组件
 // import Toptitle from './components/toptitle.vue'

@@ -32,6 +32,10 @@ module.exports = {
             "type": "confirm",
             "message": "Install vuex?"
         },
+        "lodash": {
+            "type": "confirm",
+            "message": "Install Lodash?",
+        },
         "eruda": {
             "type": "confirm",
             "message": "Install eruda Console for Mobile Browsers?",

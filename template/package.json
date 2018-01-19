@@ -50,6 +50,7 @@
     "html-webpack-plugin": "^2.29.0",
     "less": "^2.7.3",
     "less-loader": "^4.0.4",
+    {{#lodash}}"lodash": "^4.17.4",{{/lodash}}
     "node-sass": "^4.7.2",
     "postcss": "^6.0.16",
     "postcss-cssnext": "^3.0.2",

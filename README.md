@@ -1,11 +1,11 @@
-# vue-webpack-template
-Template for wepack3 + vue2.  自用改造版.
+# vue-webpack-cli
+wepack3 + vue2脚手架.  自用改造版.
 
 原出处：https://github.com/SherwinChan/vue-webpack-template.
 
 ## Usage
 
-This is a project template for vue-cli. It is recommended to use npm 3+ for a more efficient dependency tree.
+这是一个基于vue-cli的项目模版. 为了生成有效依赖树，建议使用npm 3+。
 
 install vue-cli:
 ```
@@ -19,9 +19,9 @@ $ npm install
 $ npm run dev
 ```
 
-## What's Included
+## 包含以下依赖
 
-### about webpack:
+### webpack相关:
 - webpack 3
 - webpack-dev-server
 - css-loader / style-loader
@@ -31,7 +31,7 @@ $ npm run dev
 - extract-text-webpack-plugin
 - copy-webpack-plugin
 
-### about babel:
+### babel相关:
 - babel-loader
 - babel-core
 - babel-polyfill
@@ -42,12 +42,17 @@ $ npm run dev
 - babel-plugin-transform-vue-jsx
 - babel-plugin-syntax-jsx
 
-### about vue:
+### vue相关:
 - vue
-- vue-router
+- vue-router 
 - vuex
 - axios
 - vue-loader
 - vue-template-compiler
 - postcss-loader
 - postcss-cssnext
+
+### 其他(选装):
+- lodash
+- eruda
+- ws
