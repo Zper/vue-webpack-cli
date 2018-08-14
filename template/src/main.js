@@ -66,7 +66,7 @@ axios.interceptors.response.use(function (response) {
         //   error_message = (error_message == 'token过期') ? '登录已过期，请重新登录' : error_message;
         // }
         switch (error.response.status) {
-            case 404:
+            case 400:
                 // Toast({
                 //   message: error_message,
                 //   position: 'bottom',

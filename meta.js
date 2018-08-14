@@ -36,11 +36,6 @@ module.exports = {
             "type": "confirm",
             "message": "Install Lodash?",
         },
-        "eruda": {
-            "type": "confirm",
-            "message": "Install eruda Console for Mobile Browsers?",
-            "default": false,
-        },
         "ws": {
             "type": "confirm",
             "message": "Install ws?",
