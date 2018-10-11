@@ -4,17 +4,8 @@ import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
 
-// require.ensure 是 Webpack 的特殊语法， 用来设置 code - split point（ 代码分块）
-const AllContainer = resolve => {
-    require.ensure([], () => {
-        resolve(require('./views/allcontainer.vue'))
-    })
-}
-const Building = resolve => {
-    require.ensure([], () => {
-        resolve(require('./views/building.vue'))
-    })
-}
+const AllContainer = () => import('./views/allcontainer');
+const Building = () => import('./views/building');
 
 export const constantRouterMap = [
     {

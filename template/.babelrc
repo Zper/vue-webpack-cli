@@ -10,6 +10,7 @@
     ]
   ],
   "plugins": [
+    "syntax-dynamic-import", //用于代码拆分
     "transform-object-rest-spread"//es2017的...扩展运算符转换
   ]
 }

@@ -1,7 +1,7 @@
-<template lang="html">
-  <div class="tips">
-    功能开发中
-  </div>
+<template>
+    <div class="tips">
+        功能开发中
+    </div>
 </template>
 <script>
   export default {
